@@ -6,7 +6,7 @@ def get_size(number):
     while(number >= 10):
         number /= 10
         count += 1
-        return count + 1
+    return count + 1
 
 def get_flower(max_int):
     for number in range(max_int):
@@ -24,7 +24,8 @@ def if_flower(number):
         sum += pow(mod, count)
         return sum == number
 
-max_int = raw_input("输入最大数: ")
+max_int = input("输入最大数: ")
+print type(max_int)
 start = datetime.datetime.now()
 get_flower(max_int)
 end = datetime.datetime.now()
