@@ -7,3 +7,5 @@ def factorial(n):
         sum += result
     return sum
 print factorial(3)
+
+
