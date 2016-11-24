@@ -1,5 +1,6 @@
 #encoding=utf-8
 #方法一：用ASCII
+import time
 def change_charletter(letters):
     "字符串中大写变小写，小写变大写。其余不变"
     list_result = []
@@ -14,9 +15,12 @@ def change_charletter(letters):
         else:
             list_result.append(i)
     return "".join(list_result)
-
+start_time = time.time()
+time.sleep(1)
 print change_charletter("Aa1")
 print change_charletter.__doc__
+end_time = time.time()
+print end_time - start_time
 
 #方法二：用string模块
 import string
