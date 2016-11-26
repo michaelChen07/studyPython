@@ -5,7 +5,7 @@ listb = []
 def chrinlist(lista):
     for i in lista:
         if not isinstance(i,(tuple,list)):
-            #print i
+            print i
             listb.append(i)#此处必须用全局变量
         else:
             chrinlist(i)
