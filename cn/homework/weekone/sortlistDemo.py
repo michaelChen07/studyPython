@@ -11,6 +11,7 @@ listb = [(1,2),(3,4,-2),(6,7,8,9)]
 def b(num):
     return (num[-1])*5
 listb.sort(key=b,reverse=True)
+#listb.sort(key=lambda x:x[-1]*5,reverse=True)
 print listb
 
 #按照所有元组之和进行逆向排序
@@ -18,5 +19,6 @@ listc = [(1, 2), (3, 4, -2), (6, 7, 8, 9)]
 def c(tup):
     return sum(tup)
 listc.sort(key=c,reverse=True)
+#listc.sort(key=lambda x:sum(x),reverse=True)
 print listc
 
