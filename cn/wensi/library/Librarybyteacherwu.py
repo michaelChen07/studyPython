@@ -29,7 +29,7 @@ def check():
 def exit():
     sys.exit()
 
-print "'*'*30\nwelcome to gloryroad library*'*30\n"
+print '*'*30,"welcome to gloryroad library","*"*30
 print """
 "add" command to add new book to library
 "borrow" command to borrow book from library
@@ -37,8 +37,8 @@ print """
 "delete"command to delete book from library
 "check" command to get all book names from library
 "exit" command to quit the library system
-*'*30\n
 """
+print "*"*60
 
 library_books=[]
 borrow_books={}
