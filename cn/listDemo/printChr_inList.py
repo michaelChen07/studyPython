@@ -7,8 +7,8 @@ def get_in(n):
     for i in n:
         if isinstance(i,(tuple,list)):
             for j in i:
-                print j,
-            print
+                print j,#将同一个元组中的数显示在一行
+            print   ##将同一个元组中的数显示在一行
 
 get_in(new_zoo)
 
