@@ -1,17 +1,16 @@
-#encoding=uft-8
+#encoding=utf-8
 
 #找出列表中第二大的数
-
-#method1
 a=[1,2,3,4,4,5,5,5,6,6,6]
 
+#method1
 max_value=max(a)
 while 1:
     if max_value in a:
         a.remove(max_value)
     else:
         break
-print max(a)
+print "1:",max(a)
 
 #method2
 a=[1,2,3,4,4,5,5,5,6,6,6]
@@ -19,16 +18,17 @@ a.sort()
 
 for i in a[::-1]:
     if i!=max(a):
-        print i
+        print "2:",i
         break
 
 #method3
-a=[2,5,8,8,0,5]
-b=set(a)
-b.remove(max(b))
-print max(b)
+a.sort()
+b=list(set(a))
+print "3:",b[-2]
 
 
 #method4
-a=[2,5,8,8,0,5]
-sorted(list(set(copy.deepcopy(a))),reverse=True)[1]
+print "4:",sorted(list(set(set(a[:]))),reverse=True)[1]
+
+#method5
+print "5:",sorted(set(a))[-2]
