@@ -1,8 +1,10 @@
 #encoding=utf-8
-"""def splitDemo(s,split_s=" "):
-    return s.split(split_s)
-print splitDemo("aabbccbbdd","bb")
-print splitDemo("aa bbccbbdd")"""
+
+#定义函数，实现内置函数split的功能
+
+#split函数
+print "aabbccbbdd".split("bb")
+print "aa bbccbbdd".split()
 
 #算法：
 #计算切割字符长度，遍历str中的每一个字符，
@@ -27,6 +29,15 @@ print splitDemo("aabbccbbdd","bb")
 print splitDemo("aa bbccbbdd")
 
 
-
-
+#method 2:
+def split_string(s,split_s):
+    result2=[]
+    while split_s in s:
+        index_split=s.index(split_s)    #切割符首位所在的索引位置
+        result2.append(s[:index_split]) #添加字符串首位到切割符首位的字符串
+        s=s[index_split+len(split_s):]  #重新定义字符串：未参与切割的部分
+    result2.append(s)   #添加最后一次切割剩下的字符串
+    return s
+print split_string("aabbccbbdd","bb")
+print split_string("aa bbccbbdd")
 
