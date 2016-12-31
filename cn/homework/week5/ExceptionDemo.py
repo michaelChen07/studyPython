@@ -1,14 +1,14 @@
 #encoding=utf-8
 
 def print_exception():
-    raise ValueError
+    raise ValueError#主动抛出一个异常
 try:
     try:
         print_exception()
     except ZeroDivisionError,e:
         print "ZeroDivisionError",e
 except ValueError,e:
-    print "ValueError",e
+    print "2：ValueError",e
 
 
 
