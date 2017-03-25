@@ -4,6 +4,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 
+#处理prompt弹框
 
 class VisitSogouByIE(unittest.TestCase):
     def setUp(self):
