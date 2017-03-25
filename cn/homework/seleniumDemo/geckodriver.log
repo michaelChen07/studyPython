@@ -1,0 +1,9 @@
+1490110832649	geckodriver	INFO	Listening on 127.0.0.1:55912
+1490110834732	mozprofile::profile	INFO	Using profile path C:\Users\ADMINI~1\AppData\Local\Temp\rust_mozprofile.cs6NcXdyHiSv
+1490110834739	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe
+1490110834792	geckodriver::marionette	INFO	Connecting to Marionette on localhost:55918
+1490110838010	Marionette	INFO	Listening on port 55918
+1490111079759	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1490111101936	addons.xpi	WARN	Download of https://addons.mozilla.org/firefox/downloads/file/593058/firebug-2.0.19-fx.xpi?src=api failed: 2152398862
+1490111157418	addons.xpi	WARN	Download of https://addons.mozilla.org/firefox/downloads/file/593058/firebug-2.0.19-fx.xpi?src=api failed: 2152398862
+[Child 15416] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
