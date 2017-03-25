@@ -28,7 +28,7 @@ def capture_url_image_by_browser(browser_name,url):
         drive = webdriver.Firefox(executable_path="C:\\geckodriver")
 
     drive.get(url)
-    picpath = creat_dir_by_date_time()+"\\"+browser_name+"_"+/re.search(r"http://www\.(\w+)\..*",url).group(1)+".png"
+    picpath = creat_dir_by_date_time()+"\\"+browser_name+"_"+re.search(r"http://www\.(\w+)\..*",url).group(1)+".png"
     drive.get_screenshot_as_file(picpath)
 
     drive.quit()
