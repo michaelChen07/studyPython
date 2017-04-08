@@ -31,7 +31,7 @@ class VisitSogouByIE(unittest.TestCase):
 
         #输入密码
         pwd = self.driver.find_element_by_xpath("//input[@name='password']")
-        pwd.send_keys('880403cz')
+        pwd.send_keys('******')
 
         #点击登录按钮
         button = self.driver.find_element_by_id('dologin')
