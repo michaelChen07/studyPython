@@ -1,0 +1,16 @@
+进入单元测试用例所在的目录：
+
+1 执行某个模块的所有测试用例：
+python -m unittest Test_Calc_by_specific_order
+
+2 执行某个模块的：
+python -m unittest Test_Calc_by_specific_order.MyTest
+
+
+3 执行某个模块的某个测试方法：
+python -m unittest Test_Calc_by_specific_order.MyTest.test_add
+
+4 执行某个目录的全部测试用例：(注意所有测试方法名称前须有test关键字)
+进入test目录：
+执行python -m  unittest discover -v
+或者指定某个目录来执行所有单元测试用例：python -m  unittest discover -v -s e:\单元测试\test
